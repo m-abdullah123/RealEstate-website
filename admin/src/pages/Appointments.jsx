@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 import {
@@ -15,7 +15,7 @@ import {
   Send,
 } from "lucide-react";
 import { toast } from "react-hot-toast";
-import { backendurl } from "../App";
+import { backendurl } from "../config/constants";
 
 const Appointments = () => {
   const [appointments, setAppointments] = useState([]);

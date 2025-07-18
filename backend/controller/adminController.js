@@ -19,7 +19,7 @@ const formatRecentAppointments = (appointments) => {
     description:
       appointment.userId && appointment.propertyId
         ? `${appointment.userId.name} scheduled viewing for ${appointment.propertyId.title}`
-        : "Appointment scheduled",
+        : "Appointment scheduled (details unavailable)",
     timestamp: appointment.createdAt,
   }));
 };

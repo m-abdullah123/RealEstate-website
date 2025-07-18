@@ -187,7 +187,7 @@ const Hero = () => {
 
               {/* Main Heading */}
               <motion.div variants={itemVariants} className="mb-8">
-                <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-6 leading-[0.9]">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-[0.9]">
                   <RadialGradient
                     gradient={["circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%"]}
                   >

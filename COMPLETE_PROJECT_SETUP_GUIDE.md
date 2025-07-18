@@ -245,52 +245,73 @@ npm run dev
 ### Backend Configuration (`backend/.env.local`)
 
 ```env
+# Environment Variables Configuration
+# Copy this file to .env.local and fill in your actual values
+
 # ===========================================
 # SERVER CONFIGURATION
 # ===========================================
 PORT=4000
 NODE_ENV=development
-BACKEND_URL=http://localhost:4000
+BACKEND_URL="http://localhost:4000"
 
 # ===========================================
 # DATABASE CONFIGURATION
 # ===========================================
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/buildestate?retryWrites=true&w=majority
+# MongoDB Connection String
+# Get this from MongoDB Atlas or use local MongoDB
+MONGO_URI="your_mongodb_connection_string_here"
 
 # ===========================================
 # AUTHENTICATION & SECURITY
 # ===========================================
+# Generate a strong random string for JWT
 JWT_SECRET=your_super_secret_jwt_key_here_make_it_long_and_random
 
 # ===========================================
-# EMAIL CONFIGURATION (Required)
+# EMAIL CONFIGURATION (Required for user notifications)
 # ===========================================
-SMTP_USER=your_smtp_user@smtp-brevo.com
-SMTP_PASS=your_smtp_password
-EMAIL=your_email@gmail.com
-ADMIN_EMAIL=admin@buildestate.com
-ADMIN_PASSWORD=secure_admin_password_123
+# Brevo (SendinBlue) SMTP Configuration
+SMTP_USER="your_smtp_user@smtp-brevo.com"
+SMTP_PASS="your_smtp_password"
+EMAIL="your_email@gmail.com"
+
+# Admin Credentials
+ADMIN_EMAIL="admin@buildestate.com"
+ADMIN_PASSWORD="secure_admin_password_123"
 
 # ===========================================
 # FRONTEND CONFIGURATION
 # ===========================================
-WEBSITE_URL=http://localhost:5173
+# URL where your frontend is running
+WEBSITE_URL="http://localhost:5173"
 
 # ===========================================
-# IMAGE STORAGE (Required for property images)
+# IMAGE STORAGE (Optional - ImageKit)
 # ===========================================
-IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
-IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
-IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_endpoint
+# Sign up at https://imagekit.io for free account
+IMAGEKIT_PUBLIC_KEY="public_your_public_key_here"
+IMAGEKIT_PRIVATE_KEY="private_your_private_key_here"
+IMAGEKIT_URL_ENDPOINT="https://ik.imagekit.io/your_endpoint"
 
 # ===========================================
-# AI SERVICES (Optional - for enhanced features)
+# AI SERVICES (Optional - for property search)
 # ===========================================
+# Firecrawl for web scraping - https://www.firecrawl.dev/
 FIRECRAWL_API_KEY=fc-your_firecrawl_api_key_here
+
+# HuggingFace for AI models - https://huggingface.co/
 HUGGINGFACE_API_KEY=hf_your_huggingface_api_key_here
 MODEL_ID=mistralai/Mistral-7B-Instruct-v0.2
+
+# OpenRouter for AI services - https://openrouter.ai/
 OPENROUTER_API_KEY=sk-or-v1-your_openrouter_api_key_here
+
+# OpenAI API - https://platform.openai.com/
 OPENAI_API_KEY=sk-proj-your_openai_api_key_here
+
+# Azure AI Services - https://azure.microsoft.com/en-us/products/ai-services,
+#https://github.com/marketplace/models
 AZURE_API_KEY=your_azure_api_key_here
 USE_AZURE=true
 ```
