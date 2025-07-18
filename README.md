@@ -194,7 +194,7 @@ The application follows a modern **monorepo architecture** with three distinct, 
 
 ### **📋 System Requirements**
 
-![Terminal Demo](https://waveify.onrender.com/api/terminal/modern?commands=%5B%22node%20--version%22%2C%20%22npm%20--version%22%2C%20%22mongod%20--version%22%5D&theme=modern&width=600&height=180)
+![Terminal Demo](http://localhost:4000/api/terminal/modern?commands=%5B%22node%20--version%22%2C%20%22npm%20--version%22%2C%20%22mongod%20--version%22%5D&theme=modern&width=600&height=220)
 
 - **Node.js**: v16.0.0 or higher (LTS recommended)
 - **Package Manager**: npm v8+ or yarn v1.22+
@@ -208,7 +208,7 @@ The application follows a modern **monorepo architecture** with three distinct, 
 <details>
 <summary><b>📦 Step 1: Repository Setup</b></summary>
 
-![Git Clone Demo](https://waveify.onrender.com/api/terminal/github-dark?commands=%5B%22git%20clone%20https%3A//github.com/AAYUSH412/Real-Estate-Website.git%22%2C%20%22cd%20Real-Estate-Website%22%2C%20%22ls%20-la%22%5D&width=700&height=200)
+![Git Clone Demo](https://waveify.onrender.com/api/terminal/github-dark?commands=[%22git%20clone%20https://github.com/AAYUSH412/Real-Estate-Website.git%22,%20%22cd%20Real-Estate-Website%22,%20%22ls%20-la%22]&width=700&height=400)
 
 ```bash
 git clone https://github.com/AAYUSH412/Real-Estate-Website.git
@@ -271,7 +271,7 @@ VITE_ADMIN_APP_NAME=BuildEstate Admin
 <details>
 <summary><b>📚 Step 3: Dependencies Installation</b></summary>
 
-![NPM Install Demo](https://waveify.onrender.com/api/terminal/modern?commands=%5B%22npm%20run%20setup%22%2C%20%22echo%20%27✅%20All%20dependencies%20installed%21%27%22%5D&theme=modern&width=600&height=150)
+![NPM Install Demo](https://waveify.onrender.com/api/terminal/modern?commands=%5B%22npm%20run%20setup%22%2C%20%22echo%20%27%E2%9C%85%20All%20dependencies%20installed%21%27%22%5D&theme=modern&width=600&height=200)
 
 **Option A: One-Command Setup (Recommended)**
 ```bash
