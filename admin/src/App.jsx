@@ -59,7 +59,7 @@ const AppLayout = () => {
               <Route path="/list" element={<PropertyListings />} />
               <Route path="/add" element={<Add />} />
               <Route path="/update/:id" element={<Update />} />
-              <Route path="/appointments" element={<Appointments />} />
+              {/* <Route path="/appointments" element={<Appointments />} /> */}
             </Route>
 
             {/* 404 Route */}

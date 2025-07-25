@@ -182,10 +182,10 @@ const Navbar = () => {
             </motion.div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent group-hover:from-indigo-600 group-hover:via-blue-600 group-hover:to-purple-600 transition-all duration-500">
-                BuildEstate
+              MJK
               </span>
               <span className="text-xs text-gray-500 font-medium -mt-1">
-                Premium Properties
+                Properties L.L.C
               </span>
             </div>
           </Link>
@@ -199,7 +199,7 @@ const Navbar = () => {
               {isLoggedIn ? (
                 <div className="flex items-center space-x-3">
                   {/* Notification Bell */}
-                  <motion.button
+                  {/* <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="relative p-2 rounded-lg hover:bg-gray-100 transition-colors"
@@ -214,7 +214,7 @@ const Navbar = () => {
                         {notifications}
                       </motion.span>
                     )}
-                  </motion.button>
+                  </motion.button> */}
 
                   {/* User Profile Dropdown */}
                   <div className="relative" ref={dropdownRef}>
@@ -277,27 +277,27 @@ const Navbar = () => {
 
                           {/* Menu Items */}
                           <div className="py-2">
-                            <motion.button
+                            {/* <motion.button
                               whileHover={{ x: 4, backgroundColor: "rgb(243 244 246)" }}
                               className="w-full px-6 py-3 text-left text-sm text-gray-700 hover:text-blue-600 flex items-center space-x-3 transition-colors"
                             >
                               <UserCircle className="w-4 h-4" />
                               <span>My Profile</span>
-                            </motion.button>
-                            <motion.button
+                            </motion.button> */}
+                            {/* <motion.button
                               whileHover={{ x: 4, backgroundColor: "rgb(243 244 246)" }}
                               className="w-full px-6 py-3 text-left text-sm text-gray-700 hover:text-blue-600 flex items-center space-x-3 transition-colors"
                             >
                               <Heart className="w-4 h-4" />
                               <span>Saved Properties</span>
-                            </motion.button>
-                            <motion.button
+                            </motion.button> */}
+                            {/* <motion.button
                               whileHover={{ x: 4, backgroundColor: "rgb(243 244 246)" }}
                               className="w-full px-6 py-3 text-left text-sm text-gray-700 hover:text-blue-600 flex items-center space-x-3 transition-colors"
                             >
                               <Settings className="w-4 h-4" />
                               <span>Settings</span>
-                            </motion.button>
+                            </motion.button> */}
                             <div className="border-t border-gray-100 my-2" />
                             <motion.button
                               whileHover={{ x: 4, backgroundColor: "rgb(254 242 242)" }}
@@ -334,7 +334,7 @@ const Navbar = () => {
                       to="/signup"
                       className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white px-6 py-2.5 rounded-xl hover:from-blue-700 hover:via-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl shadow-blue-500/30 font-semibold overflow-hidden"
                     >
-                      <span className="relative z-10">Get Started</span>
+                      <span className="relative z-10">Sign Up</span>
                       <motion.div
                         animate={sparkleVariants.animate}
                         className="absolute top-1 right-1"
@@ -497,77 +497,7 @@ const NavLinks = ({ currentPath }) => {
       })}
 
       {/* Enhanced AI Property Hub Link */}
-      <motion.div
-        whileHover={{ y: -2, scale: 1.02 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link
-          to="/ai-property-hub"
-          className={`relative group font-semibold transition-all duration-300 flex items-center gap-2.5 px-5 py-2.5 rounded-xl overflow-hidden ${
-            isAIHubActive
-              ? "text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 shadow-xl shadow-purple-500/40"
-              : "text-indigo-700 bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 hover:text-white border border-indigo-200 hover:border-transparent"
-          }`}
-        >
-          <div className="relative">
-            <BotMessageSquare className={`w-5 h-5 ${isAIHubActive ? "text-white" : "text-indigo-600 group-hover:text-white"}`} />
-            {/* Animated sparkles */}
-            <motion.div
-              key={sparkleKey}
-              initial={{ opacity: 0, scale: 0, rotate: 0 }}
-              animate={{ 
-                opacity: [0, 1, 0], 
-                scale: [0, 1.2, 0],
-                rotate: [0, 180, 360]
-              }}
-              transition={{ duration: 2, ease: "easeInOut" }}
-              className="absolute -top-1 -right-1"
-            >
-              <Sparkles className="w-3 h-3 text-yellow-400" />
-            </motion.div>
-          </div>
-          <span>AI Property Hub</span>
-          
-          {/* Premium badge */}
-          {!isAIHubActive && (
-            <motion.span
-              animate={{ 
-                opacity: [0.8, 1, 0.8],
-                scale: [0.95, 1, 0.95]
-              }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-2 -right-2 px-2 py-0.5 bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 rounded-full text-[10px] font-bold shadow-lg flex items-center gap-2"
-            >
-              <Zap className="w-2.5 h-2.5" />
-              NEW
-            </motion.span>
-          )}
-
-          {/* Animated background */}
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            animate={isAIHubActive ? { x: [-100, 100] } : {}}
-            transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-          />
-
-          {/* Active indicator */}
-          {isAIHubActive && (
-            <motion.div
-              layoutId="aiActiveIndicator"
-              className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-white/10 border border-white/30"
-              initial={false}
-            />
-          )}
-
-          {/* Tooltip */}
-          <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-            <div className="bg-gray-900 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap">
-              AI-powered property recommendations
-              <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 rotate-45"></div>
-            </div>
-          </div>
-        </Link>
-      </motion.div>
+     
     </div>
   );
 };
@@ -761,7 +691,7 @@ const MobileNavLinks = ({
                   <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-400 border-2 border-white rounded-full flex items-center justify-center">
                     <div className="w-2 h-2 bg-green-600 rounded-full" />
                   </div>
-                  {notifications > 0 && (
+                  {/* {notifications > 0 && (
                     <motion.div
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
@@ -769,7 +699,7 @@ const MobileNavLinks = ({
                     >
                       {notifications}
                     </motion.div>
-                  )}
+                  )} */}
                 </div>
                 <div className="flex-1">
                   <p className="text-lg font-bold text-gray-900">{user?.name}</p>
@@ -785,7 +715,7 @@ const MobileNavLinks = ({
             </div>
 
             {/* Quick Actions */}
-            <div className="grid grid-cols-2 gap-3">
+            {/* <div className="grid grid-cols-2 gap-3">
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center gap-3 px-4 py-3 bg-white border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-all"
@@ -800,7 +730,7 @@ const MobileNavLinks = ({
                 <Settings className="w-5 h-5 text-gray-600" />
                 <span className="text-sm font-medium text-gray-700">Settings</span>
               </motion.button>
-            </div>
+            </div> */}
 
             {/* Logout Button */}
             <motion.button

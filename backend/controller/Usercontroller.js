@@ -53,14 +53,14 @@ const register = async (req, res) => {
     const token = createtoken(newUser._id);
 
     // send email
-    const mailOptions = {
-      from: process.env.EMAIL,
-      to: email,
-      subject: "Welcome to BuildEstate - Your Account Has Been Created",
-      html: getWelcomeTemplate(name)
-    };
+    // const mailOptions = {
+    //   from: process.env.EMAIL,
+    //   to: email,
+    //   subject: "Welcome to BuildEstate - Your Account Has Been Created",
+    //   html: getWelcomeTemplate(name)
+    // };
 
-    await transporter.sendMail(mailOptions);
+    // await transporter.sendMail(mailOptions);
 
     return res.json({ token, user: { name: newUser.name, email: newUser.email }, success: true });
   } catch (error) {

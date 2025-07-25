@@ -56,7 +56,7 @@ const Navbar = () => {
     { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { path: '/list', label: 'Properties', icon: List },
     { path: '/add', label: 'Add Property', icon: PlusSquare },
-    { path: '/appointments', label: 'Appointments', icon: Calendar },
+    // { path: '/appointments', label: 'Appointments', icon: Calendar },
   ];
 
   const containerVariants = {
@@ -101,7 +101,7 @@ const Navbar = () => {
             </motion.div>
             <div className="ml-3">
               <span className="text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                BuildEstate
+                MJK
               </span>
               <div className="text-xs text-gray-500 font-medium">Admin Panel</div>
             </div>
@@ -140,14 +140,14 @@ const Navbar = () => {
           {/* Desktop Profile & Actions */}
           <div className="hidden md:flex items-center space-x-3">
             {/* Notifications */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="relative p-2.5 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-xl transition-all duration-200"
-            >
-              <Bell className="h-5 w-5" />
-              <span className="absolute top-1 right-1 h-3 w-3 bg-red-500 rounded-full border-2 border-white"></span>
-            </motion.button>
+              {/* <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="relative p-2.5 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-xl transition-all duration-200"
+              >
+                <Bell className="h-5 w-5" />
+                <span className="absolute top-1 right-1 h-3 w-3 bg-red-500 rounded-full border-2 border-white"></span>
+              </motion.button> */}
 
             {/* Profile Dropdown */}
             <div className="relative">
@@ -182,12 +182,12 @@ const Navbar = () => {
                       <div className="text-sm font-medium text-gray-900">Admin Panel</div>
                       <div className="text-xs text-gray-500">Manage your properties</div>
                     </div>
-                    <button
+                    {/* <button
                       className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 flex items-center"
                     >
                       <Settings className="h-4 w-4 mr-2" />
                       Settings
-                    </button>
+                    </button> */}
                     <button
                       onClick={handleLogout}
                       className="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50 flex items-center"
@@ -265,13 +265,13 @@ const Navbar = () => {
                     <div className="text-xs text-gray-500">Administrator</div>
                   </div>
                 </div>
-                
+{/*                 
                 <button
-                  className="w-full text-left px-4 py-3 rounded-xl text-sm text-gray-700 hover:bg-gray-50 flex items-center mb-2"
+                  className="w-full bg-red text-left px-4 py-3 rounded-xl text-sm text-gray-700 hover:bg-gray-50 flex items-center mb-2"
                 >
                   <Settings className="h-4 w-4 mr-3" />
                   Settings
-                </button>
+                </button> */}
                 
                 <button
                   onClick={handleLogout}

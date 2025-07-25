@@ -195,21 +195,21 @@ const Features = () => {
                 <motion.div
                   className="flex items-center justify-between pt-6 border-t border-gray-100 group-hover:border-blue-200 transition-colors duration-300"
                 >
-                  <motion.a 
+                  {/* <motion.a 
                     href="#" 
                     className="inline-flex items-center text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors group/link"
                     whileHover={{ x: 5 }}
                   >
                     Explore Feature
                     <ChevronRight className="ml-2 h-4 w-4 group-hover/link:translate-x-1 transition-transform duration-300" />
-                  </motion.a>
+                  </motion.a> */}
                   
-                  <motion.div
+                  {/* <motion.div
                     className="w-8 h-8 bg-blue-50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300"
                     whileHover={{ scale: 1.1 }}
                   >
                     <ArrowRight className="w-4 h-4 text-blue-600" />
-                  </motion.div>
+                  </motion.div> */}
                 </motion.div>
 
                 {/* Number indicator */}

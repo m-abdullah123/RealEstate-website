@@ -285,14 +285,14 @@ const Hero = () => {
                   </div>
 
                   {/* Enhanced Location Suggestions */}
-                  <AnimatePresence>
+                  {/* <AnimatePresence>
                     {showSuggestions && searchQuery.length === 0 && (
                       <motion.div
                         initial={{ opacity: 0, y: -20, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: -10, scale: 0.98 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        className="absolute left-6 right-6 top-full mt-4 bg-white/98 backdrop-blur-md 
+                        className="relative left-6 right-6 top-full mt-4 bg-white/98 backdrop-blur-md 
                           rounded-2xl shadow-2xl border border-gray-100 overflow-hidden z-50"
                       >
                         <div className="p-6">
@@ -337,7 +337,7 @@ const Hero = () => {
                         </div>
                       </motion.div>
                     )}
-                  </AnimatePresence>
+                  </AnimatePresence> */}
                 </div>
               </motion.div>
 
