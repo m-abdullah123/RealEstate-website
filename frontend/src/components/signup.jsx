@@ -273,7 +273,7 @@ const Signup = () => {
                     <Home className="w-6 h-6 text-white" />
                   </motion.div>
                   <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                    BuildEstate
+                    MJK Properties L.L.C
                   </h1>
                 </motion.div>
               </Link>

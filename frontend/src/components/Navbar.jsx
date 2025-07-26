@@ -551,7 +551,9 @@ const MobileNavLinks = ({
       className="flex flex-col space-y-3"
     >
       {/* Enhanced AI Property Hub for Mobile */}
-      <motion.div 
+
+      
+      {/* <motion.div 
         initial={{ x: -20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.1 }}
@@ -604,15 +606,14 @@ const MobileNavLinks = ({
               NEW
             </motion.span>
           )}
-          
-          {/* Animated background */}
+
           <motion.div
             className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/5 to-transparent opacity-0"
             animate={isAIHubActive ? { x: [-100, 100], opacity: [0, 0.3, 0] } : {}}
             transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
           />
         </Link>
-      </motion.div>
+      </motion.div> */}
 
       {/* Elegant separator */}
       <div className="flex items-center gap-4 px-2">

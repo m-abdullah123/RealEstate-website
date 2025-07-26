@@ -40,7 +40,7 @@ const AIPropertyHub = () => {
     setIsDeployedVersion(isDeployed);
 
     document.title =
-      "AI Property Hub | BuildEstate - Real Estate Market Analysis";
+      "AI Property Hub |Real Estate Market Analysis";
   }, []);
 
   // Timer for loading state
