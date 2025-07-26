@@ -366,7 +366,7 @@ const Navbar = () => {
                 <Menu className="w-6 h-6 text-gray-700" />
               )}
             </motion.div>
-            {isLoggedIn && notifications > 0 && (
+            {/* {isLoggedIn && notifications > 0 && (
               <motion.span
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
@@ -374,7 +374,7 @@ const Navbar = () => {
               >
                 {notifications}
               </motion.span>
-            )}
+            )} */}
           </motion.button>
         </div>
       </div>
