@@ -71,14 +71,15 @@ const addproperty = async (req, res) => {
             images.map(async (item) => {
                 try {
                     const result = await imagekit.upload({
-                        file: fs.readFileSync(item.path),
+                        // file: fs.readFileSync(item.path),
+                        file: item.buffer, // ✅ works with memoryStorage
                         fileName: item.originalname,
                         folder: "Property",
                     });
 
-                    fs.unlink(item.path, (err) => {
-                        if (err) console.log("Error deleting file:", err);
-                    });
+                    // fs.unlink(item.path, (err) => {
+                    //     if (err) console.log("Error deleting file:", err);
+                    // });
 
                     return result.url;
                 } catch (err) {
@@ -241,14 +242,15 @@ const updateproperty = async (req, res) => {
             images.map(async (item) => {
                 try {
                     const result = await imagekit.upload({
-                        file: fs.readFileSync(item.path),
+                        // file: fs.readFileSync(item.path),
+                        file: item.buffer, // ✅ works with memoryStorage
                         fileName: item.originalname,
                         folder: "Property",
                     });
 
-                    fs.unlink(item.path, (err) => {
-                        if (err) console.log("Error deleting file:", err);
-                    });
+                    // fs.unlink(item.path, (err) => {
+                    //     if (err) console.log("Error deleting file:", err);
+                    // });
 
                     return result.url;
                 } catch (err) {

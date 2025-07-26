@@ -1,13 +1,13 @@
 import multer from "multer";
 
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, "uploads/"); // Ensure the folder exists
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + "-" + file.originalname); // Unique file names
-    },
-});
-
+// const storage = multer.diskStorage({
+//     destination: (req, file, cb) => {
+//         cb(null, "uploads/"); // Ensure the folder exists
+//     },
+//     filename: (req, file, cb) => {
+//         cb(null, Date.now() + "-" + file.originalname); // Unique file names
+//     },
+// });
+const storage = multer.memoryStorage();
 const upload = multer({ storage });
 export default upload;
