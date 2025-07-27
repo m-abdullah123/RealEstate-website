@@ -10,9 +10,9 @@ export default function Hero() {
           className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500"
           animate={{
             background: [
-              'linear-gradient(to bottom right, rgba(37, 99, 235, 1), rgba(147, 51, 234, 0.9), rgba(236, 72, 153, 0.8))',
-              'linear-gradient(to bottom right, rgba(147, 51, 234, 0.9), rgba(236, 72, 153, 0.8), rgba(37, 99, 235, 1))',
-              'linear-gradient(to bottom right, rgba(236, 72, 153, 0.8), rgba(37, 99, 235, 1), rgba(147, 51, 234, 0.9))'
+              'linear-gradient(to bottom right, rgba(37, 99, 235, 1), rgba(64, 110, 208, 0.9), rgba(72, 187, 236, 0.8))',
+              'linear-gradient(to bottom right, rgba(51, 69, 234, 0.9), rgba(72, 189, 236, 0.8), rgba(37, 99, 235, 1))',
+              'linear-gradient(to bottom right, rgba(72, 209, 236, 0.8), rgba(37, 99, 235, 1), rgba(51, 143, 234, 0.9))'
             ]
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}

@@ -232,14 +232,14 @@ const Features = () => {
           <div className="bg-white/60 backdrop-blur-md rounded-3xl p-12 border border-gray-200/50 shadow-2xl">
             <motion.div
               animate={floatingAnimation}
-              className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg"
+              className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center shadow-lg"
             >
               <TrendingUp className="w-8 h-8 text-white" />
             </motion.div>
             
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Ready to Find Your{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
                 Dream Home?
               </span>
             </h3>
@@ -253,7 +253,7 @@ const Features = () => {
                 href="/properties"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-gradient-to-r from-blue-600 via-black-600 to-blue-200 text-white font-bold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all text-lg inline-flex items-center group relative overflow-hidden"
+                className="px-8 py-4 bg-gradient-to-r from-blue-600 via-black-600 to-blue-300 text-white font-bold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all text-lg inline-flex items-center group relative overflow-hidden"
               >
                 <span className="relative z-10 flex items-center">
                   Browse Properties

@@ -155,7 +155,7 @@ const Navbar = () => {
       }`}
     >
       {/* Premium gradient border */}
-      <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
+      <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-blue-600 via-black-500 to-blue-400" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">

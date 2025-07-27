@@ -7,25 +7,25 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone',
-    content: '+1 (234) 567-890',
-    link: 'tel:+1234567890',
+    content: '+971507860233',
+    link: 'tel:+971507860233',
   },
   {
     icon: Mail,
     title: 'Email',
-    content: 'support@buildestate.com',
-    link: 'mailto:support@buildestate.com',
+    content: 'ilyasm67@gmail.com',
+    link: 'mailto:ilyasm67@gmail.com',
   },
   {
     icon: MapPin,
     title: 'Address',
-    content: '123 Main Street, City, Country',
+    content: '210 Makiya Sharafi Building, Dubai, UAE',
     link: '#map',
   },
   {
     icon: Clock,
     title: 'Working Hours',
-    content: 'Mon-Fri: 9 AM - 6 PM',
+    content: 'Mon-Sat: 9 AM - 6 PM',
   },
 ];
 

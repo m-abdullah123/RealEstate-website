@@ -268,12 +268,12 @@ const Signup = () => {
                 >
                   <motion.div
                     animate={pulseAnimation}
-                    className="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center"
+                    className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-400 rounded-xl flex items-center justify-center"
                   >
                     <Home className="w-6 h-6 text-white" />
                   </motion.div>
-                  <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                    MJK Properties L.L.C
+                  <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+                    MJK Properties
                   </h1>
                 </motion.div>
               </Link>
@@ -523,7 +523,7 @@ const Signup = () => {
                   className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg ${
                     loading || Object.keys(validationErrors).some(key => validationErrors[key])
                       ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                      : 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-blue-500/25 hover:shadow-blue-500/40'
+                      : 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-500 text-white shadow-blue-500/25 hover:shadow-blue-500/40'
                   }`}
                 >
                   {loading ? (

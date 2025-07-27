@@ -274,7 +274,7 @@ const Newsletter = () => {
       
       <div className="flex items-center gap-3 mb-4">
         <motion.div 
-          className="p-2 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg"
+          className="p-2 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg"
           animate={floatingAnimation}
         >
           <Mail className="w-5 h-5 text-white" />
@@ -305,7 +305,7 @@ const Newsletter = () => {
           whileTap={{ scale: 0.98 }}
           type="submit"
           disabled={loading}
-          className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-4 rounded-xl flex items-center justify-center hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 disabled:opacity-70 font-semibold"
+          className="w-full bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-4 rounded-xl flex items-center justify-center hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 disabled:opacity-70 font-semibold"
         >
           {loading ? (
             <div className="flex items-center gap-2">
@@ -349,18 +349,18 @@ const helpLinks = [
 const contactInfo = [
   { 
     icon: MapPin, 
-    text: '123 Property Plaza, Silicon Valley, CA 94088',
-    href: 'https://maps.google.com/?q=123+Property+Plaza,Silicon+Valley,CA+94088' 
+    text: '210 Makiya Sharafi Building, Dubai, UAE',
+    href: 'https://maps.google.com/?q=210+Makiya+Sharafi+Building,Dubai,UAE' 
   },
   { 
     icon: Phone, 
-    text: '+1 (234) 567-890',
-    href: 'tel:+1234567890'
+    text: '+971507860233',
+    href: 'tel:+971507860233'
   },
   { 
     icon: Mail, 
-    text: 'support@buildestate.com',
-    href: 'mailto:support@buildestate.com' 
+    text: 'ilyasm67@gmail.com',
+    href: 'mailto:ilyasm67@gmail.com' 
   },
 ];
 
@@ -384,13 +384,13 @@ const Footer = () => {
           >
             <div className="flex items-center justify-center lg:justify-start mb-6">
               <motion.div 
-                className="p-3 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl shadow-lg"
+                className="p-3 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl shadow-lg"
                 animate={glowAnimation}
               >
                 <Home className="h-8 w-8 text-white" />
               </motion.div>
               <div className="ml-4">
-                <span className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
+                <span className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-black-600 to-blue-400">
                   MJK
                 </span>
                 <p className="text-sm text-gray-500 font-medium">Properties L.L.C</p>
@@ -554,14 +554,14 @@ const Footer = () => {
             >
               <span>© {new Date().getFullYear()} MJK Properties L.L.C. All Rights Reserved.</span>
               <Heart className="w-4 h-4 text-red-400 animate-pulse" />
-              <span className="text-gray-400">Made with love</span>
+              {/* <span className="text-gray-400">Made with love</span> */}
             </motion.p>
             
             <motion.a
               href="/properties"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+              className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-sm font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}

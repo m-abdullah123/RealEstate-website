@@ -167,9 +167,10 @@ const PropertyCard = ({ property }) => {
         </div>
         
         <div className="flex items-center justify-between">
-          <div className="flex items-center text-blue-600 font-bold">
-            <IndianRupee className="h-5 w-5 mr-1" />
-            <span className="text-xl">{Number(property.price).toLocaleString('en-IN')}</span>
+          <div className="flex items-center">
+            {/* <IndianRupee className="h-5 w-5 mr-1" /> */}
+            <span className="text-xl text-blue-600 font-bold">{Number(property.price).toLocaleString('en-AE')} </span>
+          <span>AED</span>
           </div>
           
           <div className="text-sm bg-blue-50 text-blue-700 px-2 py-1 rounded-md flex items-center">

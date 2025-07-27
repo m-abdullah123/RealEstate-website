@@ -182,10 +182,11 @@ const PropertyCard = ({ property, viewType }) => {
             <div className="flex-1">
               <p className="text-sm text-gray-500 mb-1">Price</p>
               <div className="flex items-center gap-1">
-                <IndianRupee className="w-5 h-5 text-blue-600" />
+                {/* <IndianRupee className="w-5 h-5 text-blue-600" /> */}
                 <span className="text-2xl font-bold text-blue-600">
                   {Number(property.price).toLocaleString("en-IN")}
                 </span>
+                AED
               </div>
             </div>
             {/* Rest of your price-related content */}

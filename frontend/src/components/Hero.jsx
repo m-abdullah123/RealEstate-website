@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Search, MapPin, ArrowRight, Star, Users, Home, Shield, Sparkles, TrendingUp, Filter } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-// import heroimage from "../assets/images/heroimage.png";
+import heroimage from "../assets/images/heroimage.png";
+import heroimage2 from "../assets/images/heroimage2.jpg";
 import { RadialGradient } from "react-text-gradients";
-const heroimage = `https://www.constructionweekonline.com/cloud/2024/07/23/3mOF59fC-dubaiskyline1.jpg`;
+
 const popularLocations = [
    "Downtown Dubai",
   "Dubai Marina",
@@ -115,17 +116,32 @@ const Hero = () => {
           transition={{ duration: 2, ease: "easeOut" }}
           className="absolute inset-0"
           style={{
+            backgroundImage: `url(${heroimage2})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 " />
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-purple-900/10" /> */}
+        </motion.div>
+          <motion.div
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          className="absolute inset-0"
+          style={{
             backgroundImage: `url(${heroimage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-white/10" />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-purple-900/10" />
+          <div className="absolute inset-0 " />
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-purple-900/10" /> */}
         </motion.div>
+        
 
         {/* Floating background elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             animate={floatingAnimation}
             className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl"
@@ -145,10 +161,10 @@ const Hero = () => {
             }}
             className="absolute bottom-20 left-1/3 w-80 h-80 bg-gradient-to-br from-green-400/10 to-emerald-400/10 rounded-full blur-3xl"
           />
-        </div>
+        </div> */}
 
         {/* Sparkle effects */}
-        <div className="absolute inset-0 pointer-events-none">
+        {/* <div className="absolute inset-0 pointer-events-none">
           {[...Array(6)].map((_, i) => (
             <motion.div
               key={i}
@@ -163,7 +179,7 @@ const Hero = () => {
               <Sparkles className="w-full h-full" />
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Main Content */}
@@ -198,12 +214,12 @@ const Hero = () => {
               <motion.div variants={itemVariants} className="mb-8">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-[0.9]">
                   <RadialGradient
-                    gradient={["circle, rgba(63,94,251,1) 0%, rgba(28, 17, 19, 1) 100%"]}
+                    gradient={["circle, rgba(63,94,251,1) 0%, rgba(32, 38, 50, 1) 100%"]}
                   >
                     Find Your Perfect
                   </RadialGradient>
                   <br />
-                  <span className="text-gray-900 bg-gradient-to-r from-gray-800 via-gray-900 to-black bg-clip-text text-transparent">
+                  <span className="text-gray-900 bg-gradient-to-r from-blue-800 via-black-900 to-blue-600 bg-clip-text text-transparent">
                     Dream Home
                   </span>
                 </h1>
@@ -282,7 +298,7 @@ const Hero = () => {
                         onClick={() => handleSubmit(searchQuery)}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="px-8 py-4 bg-gradient-to-r from-blue-600 via-black-600 to-white-600 
+                        className="px-8 py-4 bg-gradient-to-r from-blue-600 via-black-600 to-blue-300 
                           text-white rounded-2xl hover:shadow-2xl transition-all flex items-center gap-3 
                           font-bold text-lg shadow-xl"
                       >

@@ -192,13 +192,13 @@ const Login = () => {
                     whileTap={{ scale: 0.95 }}
                   >
                     <motion.div 
-                      className="p-3 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl shadow-lg"
+                      className="p-3 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl shadow-lg"
                       animate={pulseAnimation}
                     >
                       <Home className="w-6 h-6 text-white" />
                     </motion.div>
-                    <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                      MJK Properties L.L.C
+                    <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-black-600 to-blue-500 bg-clip-text text-transparent">
+                      MJK Properties
                     </h1>
                     <motion.div
                       animate={sparkleAnimation}
@@ -313,7 +313,7 @@ const Login = () => {
                 <motion.button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-4 rounded-xl hover:from-blue-700 hover:via-indigo-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-3 font-semibold shadow-xl shadow-blue-500/25 relative overflow-hidden group"
+                  className="w-full bg-gradient-to-r from-blue-600 via-black-600 to-blue-500 text-white py-4 rounded-xl hover:from-blue-700 hover:via-black-600 hover:to-blue-500 transition-all duration-300 flex items-center justify-center gap-3 font-semibold shadow-xl shadow-blue-500/25 relative overflow-hidden group"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                 >
