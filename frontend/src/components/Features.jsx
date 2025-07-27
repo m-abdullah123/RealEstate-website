@@ -93,14 +93,14 @@ const Features = () => {
           
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent mb-6 leading-tight">
             Why Choose{' '}
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 via-black-600 to-white-600 bg-clip-text text-transparent">
               Excellence
             </span>
           </h2>
           
           <div className="flex justify-center mb-8">
             <motion.div 
-              className="w-32 h-1.5 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-600 rounded-full shadow-lg"
+              className="w-32 h-1.5 bg-blue-600 rounded-full shadow-lg"
               animate={pulseAnimation}
             ></motion.div>
           </div>
@@ -253,7 +253,7 @@ const Features = () => {
                 href="/properties"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white font-bold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all text-lg inline-flex items-center group relative overflow-hidden"
+                className="px-8 py-4 bg-gradient-to-r from-blue-600 via-black-600 to-blue-200 text-white font-bold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all text-lg inline-flex items-center group relative overflow-hidden"
               >
                 <span className="relative z-10 flex items-center">
                   Browse Properties

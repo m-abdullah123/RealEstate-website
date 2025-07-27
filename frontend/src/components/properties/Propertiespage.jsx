@@ -6,6 +6,7 @@ import SearchBar from "./Searchbar.jsx";
 import FilterSection from "./Filtersection.jsx";
 import PropertyCard from "./Propertycard.jsx";
 import { Backendurl } from "../../App.jsx";
+import { useLocation } from "react-router-dom";
 
 const PropertiesPage = () => {
   const [viewState, setViewState] = useState({
@@ -30,6 +31,19 @@ const PropertiesPage = () => {
     searchQuery: "",
     sortBy: "",
   });
+const locationSearch = useLocation();
+
+useEffect(() => {
+  const queryParams = new URLSearchParams(locationSearch.search);
+  const searchQuery = queryParams.get("location") || "";
+  const propertyType = queryParams.get("type") || "";
+
+  setFilters((prev) => ({
+    ...prev,
+    searchQuery,
+    propertyType,
+  }));
+}, [locationSearch.search]);
 
   const fetchProperties = async () => {
     try {

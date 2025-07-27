@@ -169,7 +169,7 @@ const Navbar = () => {
                 ...glowAnimation
               }}
               transition={{ duration: 0.5 }}
-              className="relative p-2.5 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg group-hover:shadow-blue-500/30"
+              className="relative p-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-black-600 to-blue-400 shadow-lg group-hover:shadow-blue-500/30"
             >
               <img src={logo} alt="BuildEstate logo" className="w-6 h-6 brightness-0 invert" />
               {/* Floating sparkles */}
@@ -181,7 +181,7 @@ const Navbar = () => {
               </motion.div>
             </motion.div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent group-hover:from-indigo-600 group-hover:via-blue-600 group-hover:to-purple-600 transition-all duration-500">
+              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-black-600 to-blue-200 bg-clip-text text-transparent group-hover:from-indigo-600 group-hover:via-blue-600 group-hover:to-purple-600 transition-all duration-500">
               MJK
               </span>
               <span className="text-xs text-gray-500 font-medium -mt-1">
@@ -332,7 +332,7 @@ const Navbar = () => {
                   >
                     <Link
                       to="/signup"
-                      className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white px-6 py-2.5 rounded-xl hover:from-blue-700 hover:via-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl shadow-blue-500/30 font-semibold overflow-hidden"
+                      className="relative bg-gradient-to-r from-blue-600 via-black-600 to-blue-400 text-white px-6 py-2.5 rounded-xl hover:from-blue-700 hover:via-purple-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl shadow-blue-500/30 font-semibold overflow-hidden"
                     >
                       <span className="relative z-10">Sign Up</span>
                       <motion.div

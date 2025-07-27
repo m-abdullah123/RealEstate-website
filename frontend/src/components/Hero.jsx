@@ -2,22 +2,29 @@ import { useState } from "react";
 import { Search, MapPin, ArrowRight, Star, Users, Home, Shield, Sparkles, TrendingUp, Filter } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import heroimage from "../assets/images/heroimage.png";
+// import heroimage from "../assets/images/heroimage.png";
 import { RadialGradient } from "react-text-gradients";
-
+const heroimage = `https://www.constructionweekonline.com/cloud/2024/07/23/3mOF59fC-dubaiskyline1.jpg`;
 const popularLocations = [
-  "Mumbai",
-  "Delhi", 
-  "Bangalore",
-  "Hyderabad",
-  "Chennai"
+   "Downtown Dubai",
+  "Dubai Marina",
+  "Business Bay",
+  "Jumeirah Village Circle (JVC)",
+  "Palm Jumeirah",
+  "Jumeirah Lake Towers (JLT)",
+  "Dubai Hills Estate",
+  "Arabian Ranches",
+  "Al Barsha",
+  "Bluewaters Island"
 ];
 
 const quickFilters = [
-  { label: "Apartments", icon: Home, count: "2.5k+" },
-  { label: "Houses", icon: Home, count: "1.8k+" },
-  { label: "Villas", icon: Home, count: "750+" },
-  { label: "Studios", icon: Home, count: "1.2k+" }
+  { label: "Apartment", icon: Home, count: " " },
+  { label: "House", icon: Home, count: " " },
+  { label: "Villa", icon: Home, count: " " },
+  { label: "Office", icon: Home, count: " " },
+    { label: "Warehouse", icon: Home, count: " " },
+      { label: "Land", icon: Home, count: " " }
 ];
 
 const stats = [
@@ -82,7 +89,9 @@ const Hero = () => {
 
   const handleSubmit = (location = searchQuery) => {
     if (location.trim()) {
-      navigate(`/properties?location=${encodeURIComponent(location)}&type=${propertyType}`);
+       setShowSuggestions(false); // <- Add this line
+     navigate(`/properties?location=${encodeURIComponent(location)}${propertyType !== "All" ? `&type=${propertyType}` : ""}`);
+
     }
   };
 
@@ -189,7 +198,7 @@ const Hero = () => {
               <motion.div variants={itemVariants} className="mb-8">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-[0.9]">
                   <RadialGradient
-                    gradient={["circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%"]}
+                    gradient={["circle, rgba(63,94,251,1) 0%, rgba(28, 17, 19, 1) 100%"]}
                   >
                     Find Your Perfect
                   </RadialGradient>
@@ -203,9 +212,9 @@ const Hero = () => {
                   variants={itemVariants}
                   className="text-gray-700 text-xl sm:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed font-medium"
                 >
-                  Discover exceptional properties in prime locations with our 
-                  <span className="text-blue-600 font-semibold"> AI-powered search</span> and 
-                  <span className="text-purple-600 font-semibold"> expert guidance</span>
+                  Discover exceptional properties in prime locations 
+                  {/* <span className="text-blue-600 font-semibold"> AI-powered search</span> and 
+                  <span className="text-purple-600 font-semibold"> expert guidance</span> */}
                 </motion.p>
               </motion.div>
 
@@ -214,7 +223,7 @@ const Hero = () => {
                 variants={itemVariants}
                 className="relative max-w-4xl mx-auto mb-16"
               >
-                <div className="bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/50">
+                <div className="bg-transparent backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/50">
                   {/* Property Type Filters */}
                   <div className="flex flex-wrap justify-center gap-3 mb-6">
                     {quickFilters.map((filter) => (
@@ -231,7 +240,7 @@ const Hero = () => {
                       >
                         <filter.icon className="w-4 h-4" />
                         <span>{filter.label}</span>
-                        <span className="text-xs opacity-75">({filter.count})</span>
+                        {/* <span className="text-xs opacity-75">({filter.count})</span> */}
                       </motion.button>
                     ))}
                   </div>
@@ -270,10 +279,10 @@ const Hero = () => {
                       </motion.button>
                       
                       <motion.button
-                        onClick={() => handleSubmit()}
+                        onClick={() => handleSubmit(searchQuery)}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 
+                        className="px-8 py-4 bg-gradient-to-r from-blue-600 via-black-600 to-white-600 
                           text-white rounded-2xl hover:shadow-2xl transition-all flex items-center gap-3 
                           font-bold text-lg shadow-xl"
                       >
@@ -342,7 +351,7 @@ const Hero = () => {
               </motion.div>
 
               {/* Stats Section */}
-              <motion.div
+              {/* <motion.div
                 variants={containerVariants}
                 className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
               >
@@ -362,7 +371,7 @@ const Hero = () => {
                     <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
                   </motion.div>
                 ))}
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </div>
         </div>

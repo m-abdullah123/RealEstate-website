@@ -4,7 +4,7 @@ import axios from 'axios';
 import { backendurl } from '../config/constants';
 import { Upload, X } from 'lucide-react';
 
-const PROPERTY_TYPES = ['House', 'Apartment', 'Office', 'Villa'];
+const PROPERTY_TYPES = ['House', 'Apartment', 'Office', 'Villa', 'Land', 'Warehouse'];
 const AVAILABILITY_TYPES = ['rent', 'buy'];
 
 const PropertyForm = () => {
@@ -253,13 +253,12 @@ const PropertyForm = () => {
             <div className="grid grid-cols-3 gap-4">
               <div>
                 <label htmlFor="beds" className="block text-sm font-medium text-gray-700">
-                  Bedrooms
+                  Bedrooms(Optional)
                 </label>
                 <input
                   type="number"
                   id="beds"
                   name="beds"
-                  required
                   min="0"
                   value={formData.beds}
                   onChange={handleInputChange}
@@ -269,13 +268,12 @@ const PropertyForm = () => {
 
               <div>
                 <label htmlFor="baths" className="block text-sm font-medium text-gray-700">
-                  Bathrooms
+                  Bathrooms(Optional)
                 </label>
                 <input
                   type="number"
                   id="baths"
                   name="baths"
-                  required
                   min="0"
                   value={formData.baths}
                   onChange={handleInputChange}
@@ -319,7 +317,7 @@ const PropertyForm = () => {
           {/* Amenities */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              Amenities
+              Amenities(Optional)
             </label>
             <div className="flex flex-wrap gap-2">
               {formData.amenities.map((amenity, index) => (
