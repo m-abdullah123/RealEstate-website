@@ -157,7 +157,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.98 }}
                 className="flex items-center space-x-2 p-2 rounded-xl hover:bg-gray-50 transition-all duration-200"
               >
-                <div className="h-8 w-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                <div className="h-8 w-8 bg-gradient-to-br from-blue-600 to-blue-500 rounded-lg flex items-center justify-center">
                   <User className="h-4 w-4 text-white" />
                 </div>
                 <div className="text-left hidden lg:block">
