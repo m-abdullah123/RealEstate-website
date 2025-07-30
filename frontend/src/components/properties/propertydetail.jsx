@@ -364,11 +364,11 @@ const PropertyDetails = () => {
                     <div className="bg-gray-50 p-4 rounded-lg text-center">
                       <BedDouble className="w-6 h-6 text-blue-600 mx-auto mb-2" />
                       <p className="text-sm text-gray-600">
-                        {property.beds} {property.beds > 1 ? "Beds" : "Bed"}
+                        {property.beds} {property.beds > 1 ? "Rooms" : "Room"}
                       </p>
                     </div>
                   )}
-                   {property.beds > 0 && (
+                   {property.baths > 0 && (
                   <div className="bg-gray-50 p-4 rounded-lg text-center">
                     <Bath className="w-6 h-6 text-blue-600 mx-auto mb-2" />
                     <p className="text-sm text-gray-600">

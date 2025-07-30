@@ -154,7 +154,7 @@ const PropertyCard = ({ property }) => {
         <div className="flex justify-between items-center py-3 border-y border-gray-100 mb-4">
           {property.beds > 0 && (<div className="flex items-center gap-1">
             <BedDouble className="w-4 h-4 text-blue-500" />
-            <span className="text-sm text-gray-600">{property.beds} {property.beds > 1 ? 'Beds' : 'Bed'}</span>
+            <span className="text-sm text-gray-600">{property.beds} {property.beds > 1 ? 'Rooms' : 'Room'}</span>
           </div>)}
           {property.baths > 0 && (<div className="flex items-center gap-1">
             <Bath className="w-4 h-4 text-blue-500" />

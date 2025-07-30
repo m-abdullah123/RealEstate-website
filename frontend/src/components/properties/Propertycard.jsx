@@ -199,7 +199,7 @@ const PropertyCard = ({ property, viewType }) => {
             <div className="flex flex-col items-center gap-1 bg-blue-50 p-2 rounded-lg">
               <BedDouble className="w-5 h-5 text-blue-600" />
               <span className="text-sm font-medium text-gray-600">
-                {property.beds} {property.beds > 1 ? "Beds" : "Bed"}
+                {property.beds} {property.beds > 1 ? "Rooms" : "Room"}
               </span>
             </div>
           )}
