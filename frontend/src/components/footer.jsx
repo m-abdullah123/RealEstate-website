@@ -336,14 +336,14 @@ const companyLinks = [
   { name: 'Properties', href: '/properties', icon: MapPin },
   { name: 'About Us', href: '/about', icon: Star },
   { name: 'Contact', href: '/contact', icon: Mail },
-  { name: 'AI Property Hub', href: '/ai-agent', icon: Zap },
+  // { name: 'AI Property Hub', href: '/ai-agent', icon: Zap },
 ];
 
 const helpLinks = [
-  { name: 'Customer Support', href: '/', icon: Heart },
-  { name: 'FAQs', href: '/', icon: Sparkles },
-  { name: 'Terms & Conditions', href: '/', icon: Shield },
-  { name: 'Privacy Policy', href: '/', icon: Clock },
+  { name: 'Customer Support', href: '/contact', icon: Heart },
+  // { name: 'FAQs', href: '/', icon: Sparkles },
+  // { name: 'Terms & Conditions', href: '/', icon: Shield },
+  // { name: 'Privacy Policy', href: '/', icon: Clock },
 ];
 
 const contactInfo = [
@@ -416,7 +416,7 @@ const Footer = () => {
             {/* Quick Links Column */}
             <FooterColumn 
               title="Quick Links" 
-              className="col-span-3" 
+              className="col-span-4" 
               delay={0.2}
               icon={Home}
             >
@@ -432,7 +432,7 @@ const Footer = () => {
             </FooterColumn>
 
             {/* Help Column */}
-            <FooterColumn 
+            {/* <FooterColumn 
               title="Support" 
               className="col-span-3" 
               delay={0.3}
@@ -447,12 +447,12 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </FooterColumn>
+            </FooterColumn> */}
 
             {/* Contact Info */}
             <FooterColumn 
               title="Contact Us" 
-              className="col-span-3" 
+              className="col-span-4" 
               delay={0.4}
               icon={MapPin}
             >
@@ -477,7 +477,7 @@ const Footer = () => {
             </FooterColumn>
             
             {/* Newsletter */}
-            <div className="col-span-3">
+            <div className="col-span-4">
               <Newsletter />
             </div>
           </div>
