@@ -567,7 +567,7 @@ const PropertyListings = () => {
                               {property.beds}
                             </div>
                             <div className="text-xs text-gray-500">
-                              Bedrooms
+                              Rooms
                             </div>
                           </div>)}
                           {property.baths > 0 &&(<div className="text-center p-3 bg-gray-50 rounded-xl">

@@ -251,14 +251,17 @@ const Update = () => {
 
             <div className="grid grid-cols-3 gap-4">
               <div>
-                <label htmlFor="beds" className="block text-sm font-medium text-gray-700">
-                  Bedrooms
+                <label
+                  htmlFor="beds"
+                  className="text-sm font-medium text-gray-700 flex flex-col sm:flex-row sm:items-center"
+                >
+                  Rooms
+                  <span className="text-gray-500 sm:ml-1">(Optional)</span>
                 </label>
                 <input
                   type="number"
                   id="beds"
                   name="beds"
-                  required
                   min="0"
                   value={formData.beds}
                   onChange={handleInputChange}
@@ -267,14 +270,17 @@ const Update = () => {
               </div>
 
               <div>
-                <label htmlFor="baths" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="baths"
+                  className="text-sm font-medium text-gray-700 flex flex-col sm:flex-row sm:items-center"
+                >
                   Bathrooms
+                  <span className="text-gray-500 sm:ml-1">(Optional)</span>
                 </label>
                 <input
                   type="number"
                   id="baths"
                   name="baths"
-                  required
                   min="0"
                   value={formData.baths}
                   onChange={handleInputChange}
